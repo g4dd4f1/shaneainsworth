@@ -1,5 +1,6 @@
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
+import Image from 'next/image';
 import { projects } from '../../data/projects';
 import Sidebar from '../../../components/Sidebar';
 import styles from './project.module.css';
@@ -46,6 +47,23 @@ export default function ProjectPage({ params }) {
         </div>
 
         {/* Prev / Next — sits below video, inside the centre column */}
+        {/* Stills grid */}
+        {project.stills && project.stills.length > 0 && (
+          <div className={styles.stills}>
+            {project.stills.map((src, i) => (
+              <div key={i} className={styles.still}>
+                <Image
+                  src={src}
+                  alt={`${project.title} still ${i + 1}`}
+                  fill
+                  sizes="(max-width: 900px) 50vw, 30vw"
+                  className={styles.stillImg}
+                />
+              </div>
+            ))}
+          </div>
+        )}
+
         <nav className={styles.nav}>
           {prev ? (
             <Link href={`/work/${prev.id}`} className={styles.navLink}>

@@ -36,6 +36,31 @@
   border: none;
 }
 
+/* ── Stills grid ── */
+.stills {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 6px;
+  padding: 6px 0;
+  width: 100%;
+}
+
+.still {
+  position: relative;
+  aspect-ratio: var(--still-ratio, 16 / 9);
+  overflow: hidden;
+  background: #e8e6e1;
+}
+
+.stillImg {
+  object-fit: cover;
+  transition: transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.still:hover .stillImg {
+  transform: scale(1.03);
+}
+
 /* ── Prev / Next ── */
 .nav {
   display: grid;

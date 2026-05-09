@@ -15,6 +15,12 @@ export const projects = [
     awards: null,
     vimeoId: '1190546210',
     thumbnail: null,
+    stills: [
+      '/stills/lykke-li-carousel-1.jpg',
+      '/stills/lykke-li-carousel-2.jpg',
+      '/stills/lykke-li-carousel-3.jpg',
+      '/stills/lykke-li-carousel-4.jpg',
+    ],
   },
   {
     id: 'lykke-li-happy-hurts',
@@ -27,6 +33,12 @@ export const projects = [
     awards: null,
     vimeoId: '1190691403',
     thumbnail: null,
+    stills: [
+      '/stills/lykke-li-happy-hurts-1.jpg',
+      '/stills/lykke-li-happy-hurts-2.jpg',
+      '/stills/lykke-li-happy-hurts-3.jpg',
+      '/stills/lykke-li-happy-hurts-4.jpg',
+    ],
   },
   {
     id: 'lykke-li-5d',
@@ -39,6 +51,12 @@ export const projects = [
     awards: ['Official Selection — EnergaCAMERIMAGE'],
     vimeoId: '1190609707',
     thumbnail: null,
+    stills: [
+      '/stills/lykke-li-5d-1.jpg',
+      '/stills/lykke-li-5d-2.jpg',
+      '/stills/lykke-li-5d-3.jpg',
+      '/stills/lykke-li-5d-4.jpg',
+    ],
   },
   {
     id: 'lykke-li-eyeye-teaser',
@@ -51,6 +69,12 @@ export const projects = [
     awards: null,
     vimeoId: '1190707960',
     thumbnail: null,
+    stills: [
+      '/stills/lykke-li-eyeye-teaser-1.jpg',
+      '/stills/lykke-li-eyeye-teaser-2.jpg',
+      '/stills/lykke-li-eyeye-teaser-3.jpg',
+      '/stills/lykke-li-eyeye-teaser-4.jpg',
+    ],
   },
   {
     id: 'nissan-kicks',
@@ -63,6 +87,12 @@ export const projects = [
     awards: null,
     vimeoId: '1190450236',
     thumbnail: null,
+    stills: [
+      '/stills/nissan-kicks-1.jpg',
+      '/stills/nissan-kicks-2.png',
+      '/stills/nissan-kicks-3.jpg',
+      '/stills/nissan-kicks-4.jpg',
+    ],
   },
   {
     id: 'andre-3000-citizen-mag',
@@ -75,6 +105,12 @@ export const projects = [
     awards: null,
     vimeoId: '1190464516',
     thumbnail: null,
+    stills: [
+      '/stills/andre-3000-citizen-mag-1.jpg',
+      '/stills/andre-3000-citizen-mag-2.jpg',
+      '/stills/andre-3000-citizen-mag-3.jpg',
+      '/stills/andre-3000-citizen-mag-4.jpg',
+    ],
   },
   {
     id: 'bose-niki',
@@ -87,6 +123,12 @@ export const projects = [
     awards: null,
     vimeoId: '1190459768',
     thumbnail: null,
+    stills: [
+      '/stills/bose-niki-1.png',
+      '/stills/bose-niki-2.jpg',
+      '/stills/bose-niki-3.png',
+      '/stills/bose-niki-4.png',
+    ],
   },
   {
     id: 'mike-will-high3r',
@@ -99,6 +141,12 @@ export const projects = [
     awards: null,
     vimeoId: '1190697589',
     thumbnail: null,
+    stills: [
+      '/stills/mike-will-high3r-1.jpg',
+      '/stills/mike-will-high3r-2.jpg',
+      '/stills/mike-will-high3r-3.jpg',
+      '/stills/mike-will-high3r-4.jpg',
+    ],
   },
   {
     id: 'noah-cyrus-avellano',
@@ -111,6 +159,12 @@ export const projects = [
     awards: null,
     vimeoId: '1190699050',
     thumbnail: null,
+    stills: [
+      '/stills/noah-cyrus-avellano-1.jpg',
+      '/stills/noah-cyrus-avellano-2.jpg',
+      '/stills/noah-cyrus-avellano-3.jpg',
+      '/stills/noah-cyrus-avellano-4.jpg',
+    ],
   },
   {
     id: 'bright-cell-youth-to-the-people',
@@ -123,6 +177,12 @@ export const projects = [
     awards: null,
     vimeoId: '1190698545',
     thumbnail: null,
+    stills: [
+      '/stills/bright-cell-youth-to-the-people-1.jpg',
+      '/stills/bright-cell-youth-to-the-people-2.jpg',
+      '/stills/bright-cell-youth-to-the-people-3.jpg',
+      '/stills/bright-cell-youth-to-the-people-4.jpg',
+    ],
   },
   {
     id: 'shoot',
@@ -135,6 +195,12 @@ export const projects = [
     awards: null,
     vimeoId: '1190459418',
     thumbnail: null,
+    stills: [
+      '/stills/shoot-1.jpg',
+      '/stills/shoot-2.jpg',
+      '/stills/shoot-3.jpg',
+      '/stills/shoot-4.jpg',
+    ],
   },
   {
     id: 'perto-jester',
@@ -147,6 +213,12 @@ export const projects = [
     awards: null,
     vimeoId: '1190459418',
     thumbnail: null,
+    stills: [
+      '/stills/perto-jester-1.jpg',
+      '/stills/perto-jester-2.jpg',
+      '/stills/perto-jester-3.png',
+      '/stills/perto-jester-4.jpg',
+    ],
   },
   {
     id: 'khamari-right-my-wrongs',
@@ -159,6 +231,12 @@ export const projects = [
     awards: null,
     vimeoId: '1190460450',
     thumbnail: null,
+    stills: [
+      '/stills/khamari-right-my-wrongs-1.png',
+      '/stills/khamari-right-my-wrongs-2.jpg',
+      '/stills/khamari-right-my-wrongs-3.jpg',
+      '/stills/khamari-right-my-wrongs-4.png',
+    ],
   },
   {
     id: '1-girl-infinite',
@@ -176,6 +254,12 @@ export const projects = [
     ],
     vimeoId: '1190708767',
     thumbnail: null,
+    stills: [
+      '/stills/1-girl-infinite-1.jpg',
+      '/stills/1-girl-infinite-2.jpg',
+      '/stills/1-girl-infinite-3.jpg',
+      '/stills/1-girl-infinite-4.jpg',
+    ],
   },
   {
     id: 'noon-goons-fw24',
@@ -188,5 +272,11 @@ export const projects = [
     awards: null,
     vimeoId: '1190454589',
     thumbnail: null,
+    stills: [
+      '/stills/noon-goons-fw24-1.jpg',
+      '/stills/noon-goons-fw24-2.jpg',
+      '/stills/noon-goons-fw24-3.jpg',
+      '/stills/noon-goons-fw24-4.jpg',
+    ],
   },
 ];
