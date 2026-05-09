@@ -28,9 +28,12 @@ export default function ProjectPage({ params }) {
 
   return (
     <div className={styles.layout}>
-      <Sidebar />
-      <main className={styles.main}>
 
+      {/* Left — sidebar nav */}
+      <Sidebar />
+
+      {/* Centre — video */}
+      <main className={styles.main}>
         <div className={styles.playerWrap}>
           <div className={styles.player}>
             <iframe
@@ -42,7 +45,34 @@ export default function ProjectPage({ params }) {
           </div>
         </div>
 
-        <div className={styles.info}>
+        {/* Prev / Next — sits below video, inside the centre column */}
+        <nav className={styles.nav}>
+          {prev ? (
+            <Link href={`/work/${prev.id}`} className={styles.navLink}>
+              <span className={styles.navDir}>← Previous</span>
+              <span className={styles.navTitle}>
+                {prev.title}{prev.subtitle ? ` — ${prev.subtitle}` : ''}
+              </span>
+            </Link>
+          ) : <div />}
+
+          <Link href="/" className={styles.allWork}>All Work</Link>
+
+          {next ? (
+            <Link href={`/work/${next.id}`} className={`${styles.navLink} ${styles.navRight}`}>
+              <span className={styles.navDir}>Next →</span>
+              <span className={styles.navTitle}>
+                {next.title}{next.subtitle ? ` — ${next.subtitle}` : ''}
+              </span>
+            </Link>
+          ) : <div />}
+        </nav>
+      </main>
+
+      {/* Right — project info column */}
+      <aside className={styles.infoCol}>
+        <div className={styles.infoInner}>
+
           <div className={styles.titleBlock}>
             <span className={styles.category}>{project.category}</span>
             <h1 className={styles.title}>{project.title}</h1>
@@ -66,6 +96,10 @@ export default function ProjectPage({ params }) {
               <span className={styles.creditLabel}>Cinematographer</span>
               <span className={styles.creditValue}>Shane Ainsworth</span>
             </div>
+            <div className={styles.credit}>
+              <span className={styles.creditLabel}>Year</span>
+              <span className={styles.creditValue}>{project.year}</span>
+            </div>
           </div>
 
           {project.awards && project.awards.length > 0 && (
@@ -75,31 +109,10 @@ export default function ProjectPage({ params }) {
               ))}
             </div>
           )}
+
         </div>
+      </aside>
 
-        <nav className={styles.nav}>
-          {prev ? (
-            <Link href={`/work/${prev.id}`} className={styles.navLink}>
-              <span className={styles.navDir}>← Previous</span>
-              <span className={styles.navTitle}>
-                {prev.title}{prev.subtitle ? ` — ${prev.subtitle}` : ''}
-              </span>
-            </Link>
-          ) : <div />}
-
-          <Link href="/" className={styles.allWork}>All Work</Link>
-
-          {next ? (
-            <Link href={`/work/${next.id}`} className={`${styles.navLink} ${styles.navRight}`}>
-              <span className={styles.navDir}>Next →</span>
-              <span className={styles.navTitle}>
-                {next.title}{next.subtitle ? ` — ${next.subtitle}` : ''}
-              </span>
-            </Link>
-          ) : <div />}
-        </nav>
-
-      </main>
     </div>
   );
 }
