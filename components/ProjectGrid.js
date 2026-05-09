@@ -1,29 +1,19 @@
-'use client';
-
-import { useState } from 'react';
+import Link from 'next/link';
 import ProjectTile from './ProjectTile';
-import VideoModal from './VideoModal';
 import styles from './ProjectGrid.module.css';
 
 export default function ProjectGrid({ projects }) {
-  const [active, setActive] = useState(null);
-
   return (
-    <>
-      <div className={styles.grid}>
-        {projects.map((project, i) => (
-          <ProjectTile
-            key={project.id}
-            project={project}
-            index={i}
-            onClick={() => setActive(project)}
-          />
-        ))}
-      </div>
-
-      {active && (
-        <VideoModal project={active} onClose={() => setActive(null)} />
-      )}
-    </>
+    <div className={styles.grid}>
+      {projects.map((project, i) => (
+        <Link
+          key={project.id}
+          href={`/work/${project.id}`}
+          className={styles.link}
+        >
+          <ProjectTile project={project} index={i} />
+        </Link>
+      ))}
+    </div>
   );
 }

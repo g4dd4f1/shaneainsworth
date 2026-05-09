@@ -5,6 +5,12 @@
   padding: var(--grid-gap);
 }
 
+.link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
 @media (max-width: 700px) {
   .grid {
     grid-template-columns: 1fr;
