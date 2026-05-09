@@ -1,0 +1,109 @@
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: var(--sidebar-w);
+  height: 100vh;
+  border-right: 1px solid var(--rule);
+  z-index: 100;
+  background: var(--white);
+  display: flex;
+  flex-direction: column;
+}
+
+.inner {
+  padding: var(--sidebar-pad);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.wordmark a {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.name {
+  font-family: var(--font-display);
+  font-size: clamp(1rem, 1.4vw, 1.35rem);
+  font-weight: 400;
+  font-style: italic;
+  line-height: 1.15;
+  display: block;
+}
+
+.title {
+  font-size: clamp(0.58rem, 0.7vw, 0.68rem);
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--mid);
+  display: block;
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.link,
+.active {
+  font-size: clamp(0.62rem, 0.75vw, 0.72rem);
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+  transition: color 0.2s;
+  display: block;
+}
+
+.link {
+  color: var(--mid);
+}
+
+.link:hover {
+  color: var(--black);
+}
+
+.active {
+  color: var(--black);
+  position: relative;
+}
+
+.active::before {
+  content: '—';
+  margin-right: 6px;
+  font-style: normal;
+}
+
+/* ── Mobile: sidebar becomes top bar ── */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    border-right: none;
+    border-bottom: 1px solid var(--rule);
+  }
+
+  .inner {
+    flex-direction: row;
+    align-items: center;
+    padding: 16px 20px;
+    height: auto;
+  }
+
+  .wordmark a {
+    flex-direction: row;
+    align-items: baseline;
+    gap: 10px;
+  }
+
+  .nav {
+    flex-direction: row;
+    gap: 20px;
+  }
+}

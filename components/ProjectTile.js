@@ -13,7 +13,7 @@ export default function ProjectTile({ project, index }) {
             src={project.thumbnail}
             alt={`${project.title}${project.subtitle ? ` — ${project.subtitle}` : ''}`}
             fill
-            sizes="(max-width: 700px) 100vw, (max-width: 1200px) 50vw, 33vw"
+            sizes="(max-width: 560px) 100vw, 40vw"
             className={styles.image}
           />
         ) : (
@@ -40,7 +40,6 @@ export default function ProjectTile({ project, index }) {
         <span className={styles.metaTitle}>
           {project.title}{project.subtitle ? ` — ${project.subtitle}` : ''}
         </span>
-        <span className={styles.metaYear}>{project.year}</span>
       </div>
     </div>
   );

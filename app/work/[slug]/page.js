@@ -1,6 +1,7 @@
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import { projects } from '../../data/projects';
+import Sidebar from '../../../components/Sidebar';
 import styles from './project.module.css';
 
 export async function generateStaticParams() {
@@ -21,30 +22,27 @@ export default function ProjectPage({ params }) {
 
   const vimeoSrc = `https://player.vimeo.com/video/${project.vimeoId}?color=0e0e0d&title=0&byline=0&portrait=0`;
 
-  // Previous / next navigation
   const currentIndex = projects.findIndex((p) => p.id === params.slug);
   const prev = projects[currentIndex - 1] || null;
   const next = projects[currentIndex + 1] || null;
 
   return (
-    <div className={styles.page}>
+    <div className={styles.layout}>
+      <Sidebar />
+      <main className={styles.main}>
 
-      {/* Video player */}
-      <div className={styles.playerWrap}>
-        <div className={styles.player}>
-          <iframe
-            src={vimeoSrc}
-            allow="autoplay; fullscreen; picture-in-picture"
-            allowFullScreen
-            title={`${project.title}${project.subtitle ? ` — ${project.subtitle}` : ''}`}
-          />
+        <div className={styles.playerWrap}>
+          <div className={styles.player}>
+            <iframe
+              src={vimeoSrc}
+              allow="autoplay; fullscreen; picture-in-picture"
+              allowFullScreen
+              title={`${project.title}${project.subtitle ? ` — ${project.subtitle}` : ''}`}
+            />
+          </div>
         </div>
-      </div>
 
-      {/* Project info */}
-      <div className={styles.info}>
-        <div className={styles.infoInner}>
-
+        <div className={styles.info}>
           <div className={styles.titleBlock}>
             <span className={styles.category}>{project.category}</span>
             <h1 className={styles.title}>{project.title}</h1>
@@ -68,10 +66,6 @@ export default function ProjectPage({ params }) {
               <span className={styles.creditLabel}>Cinematographer</span>
               <span className={styles.creditValue}>Shane Ainsworth</span>
             </div>
-            <div className={styles.credit}>
-              <span className={styles.creditLabel}>Year</span>
-              <span className={styles.creditValue}>{project.year}</span>
-            </div>
           </div>
 
           {project.awards && project.awards.length > 0 && (
@@ -81,13 +75,9 @@ export default function ProjectPage({ params }) {
               ))}
             </div>
           )}
-
         </div>
-      </div>
 
-      {/* Prev / Next navigation */}
-      <nav className={styles.nav}>
-        <div className={styles.navInner}>
+        <nav className={styles.nav}>
           {prev ? (
             <Link href={`/work/${prev.id}`} className={styles.navLink}>
               <span className={styles.navDir}>← Previous</span>
@@ -107,9 +97,9 @@ export default function ProjectPage({ params }) {
               </span>
             </Link>
           ) : <div />}
-        </div>
-      </nav>
+        </nav>
 
+      </main>
     </div>
   );
 }
