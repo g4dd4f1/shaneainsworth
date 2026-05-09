@@ -177,4 +177,16 @@ export const projects = [
     vimeoId: '1190708767',
     thumbnail: null,
   },
+  {
+    id: 'noon-goons-fw24',
+    title: 'Noon Goons FW24',
+    subtitle: null,
+    category: 'Fashion Film',
+    director: 'Bilal El Kahdi',
+    productionCo: null,
+    year: '2024',
+    awards: null,
+    vimeoId: '1190454589',
+    thumbnail: null,
+  },
 ];
