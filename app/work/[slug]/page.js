@@ -52,11 +52,9 @@ export default function ProjectPage({ params }) {
           <div className={styles.stills}>
             {project.stills.map((src, i) => (
               <div key={i} className={styles.still}>
-                <Image
+                <img
                   src={src}
                   alt={`${project.title} still ${i + 1}`}
-                  fill
-                  sizes="(max-width: 900px) 50vw, 30vw"
                   className={styles.stillImg}
                 />
               </div>

@@ -47,13 +47,14 @@
 
 .still {
   position: relative;
-  aspect-ratio: var(--still-ratio, 16 / 9);
   overflow: hidden;
   background: #e8e6e1;
 }
 
 .stillImg {
-  object-fit: cover;
+  width: 100%;
+  height: auto;
+  display: block;
   transition: transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
