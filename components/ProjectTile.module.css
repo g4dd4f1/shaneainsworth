@@ -68,7 +68,6 @@
 }
 
 .title {
-  font-family: var(--font-display);
   font-size: 1.25rem;
   font-weight: 400;
   color: var(--white);
@@ -76,9 +75,7 @@
 }
 
 .subtitle {
-  font-family: var(--font-display);
   font-size: 1rem;
-  font-style: italic;
   font-weight: 300;
   color: rgba(248, 247, 244, 0.85);
   margin-top: 2px;
@@ -103,7 +100,6 @@
 }
 
 .metaTitle {
-  font-family: var(--font-display);
   font-size: 0.85rem;
   color: var(--mid);
 }

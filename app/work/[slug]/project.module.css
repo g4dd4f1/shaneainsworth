@@ -94,7 +94,6 @@
 }
 
 .navTitle {
-  font-family: var(--font-display);
   font-size: 0.82rem;
   color: var(--black);
 }
@@ -155,7 +154,6 @@
 }
 
 .title {
-  font-family: var(--font-display);
   font-size: clamp(1.1rem, 1.4vw, 1.5rem);
   font-weight: 400;
   line-height: 1.1;
@@ -163,10 +161,8 @@
 }
 
 .subtitle {
-  font-family: var(--font-display);
   font-size: clamp(0.9rem, 1.1vw, 1.15rem);
   font-weight: 300;
-  font-style: italic;
   color: var(--mid);
   margin-top: 3px;
 }
@@ -192,7 +188,6 @@
 }
 
 .creditValue {
-  font-family: var(--font-display);
   font-size: clamp(0.82rem, 1vw, 0.95rem);
   color: var(--black);
 }
