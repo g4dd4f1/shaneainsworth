@@ -35,6 +35,11 @@ export default function About() {
               Shane has delivered diverse imagery for a wide range of clients such as Bose, Nissan,
               Chanel, H&amp;M, and talent such as Lykke Li, André 3000, Niki, and Lil Wayne.
             </p>
+            <p>
+              Shane's collaboration with cinematographer Edu Grau on the music video series for Lykke Li's
+              2022 album EYEYE led to an official selection at CAMERIMAGE, a nomination at the UK Music
+              Video Awards, and an exhibition at the BROAD MUSEUM in Los Angeles.
+            </p>
           </div>
 
           <div className={styles.contact}>
