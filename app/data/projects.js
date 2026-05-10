@@ -14,7 +14,7 @@ export const projects = [
     year: '2024',
     awards: null,
     vimeoId: '1190546210',
-    thumbnail: null,
+    thumbnail: '/thumbnails/lykke-li-carousel-thumb.jpg',
     stills: [
       '/stills/lykke-li-carousel-1.jpg',
       '/stills/lykke-li-carousel-2.jpg',
@@ -32,7 +32,7 @@ export const projects = [
     year: '2024',
     awards: null,
     vimeoId: '1190691403',
-    thumbnail: null,
+    thumbnail: '/thumbnails/lykke-li-happy-hurts-thumb.jpg',
     stills: [
       '/stills/lykke-li-happy-hurts-1.jpg',
       '/stills/lykke-li-happy-hurts-2.jpg',
@@ -50,7 +50,7 @@ export const projects = [
     year: '2024',
     awards: ['Official Selection — EnergaCAMERIMAGE'],
     vimeoId: '1190609707',
-    thumbnail: null,
+    thumbnail: '/thumbnails/lykke-li-5d-thumb.jpg',
     stills: [
       '/stills/lykke-li-5d-1.jpg',
       '/stills/lykke-li-5d-2.jpg',
@@ -68,7 +68,7 @@ export const projects = [
     year: '2024',
     awards: null,
     vimeoId: '1190707960',
-    thumbnail: null,
+    thumbnail: '/thumbnails/lykke-li-eyeye-teaser-thumb.jpg',
     stills: [
       '/stills/lykke-li-eyeye-teaser-1.jpg',
       '/stills/lykke-li-eyeye-teaser-2.jpg',
@@ -86,7 +86,7 @@ export const projects = [
     year: '2024',
     awards: null,
     vimeoId: '1190450236',
-    thumbnail: null,
+    thumbnail: '/thumbnails/nissan-kicks-thumb.jpg',
     stills: [
       '/stills/nissan-kicks-1.jpg',
       '/stills/nissan-kicks-2.png',
@@ -104,7 +104,7 @@ export const projects = [
     year: '2024',
     awards: null,
     vimeoId: '1190464516',
-    thumbnail: null,
+    thumbnail: '/thumbnails/andre-3000-citizen-mag-thumb.jpg',
     stills: [
       '/stills/andre-3000-citizen-mag-1.jpg',
       '/stills/andre-3000-citizen-mag-2.jpg',
@@ -122,7 +122,7 @@ export const projects = [
     year: '2024',
     awards: null,
     vimeoId: '1190459768',
-    thumbnail: null,
+    thumbnail: '/thumbnails/bose-niki-thumb.jpg',
     stills: [
       '/stills/bose-niki-1.png',
       '/stills/bose-niki-2.jpg',
@@ -140,7 +140,7 @@ export const projects = [
     year: '2024',
     awards: null,
     vimeoId: '1190697589',
-    thumbnail: null,
+    thumbnail: '/thumbnails/mike-will-high3r-thumb.jpg',
     stills: [
       '/stills/mike-will-high3r-1.jpg',
       '/stills/mike-will-high3r-2.jpg',
@@ -158,7 +158,7 @@ export const projects = [
     year: '2024',
     awards: null,
     vimeoId: '1190699050',
-    thumbnail: null,
+    thumbnail: '/thumbnails/noah-cyrus-avellano-thumb.jpg',
     stills: [
       '/stills/noah-cyrus-avellano-1.jpg',
       '/stills/noah-cyrus-avellano-2.jpg',
@@ -176,7 +176,7 @@ export const projects = [
     year: '2024',
     awards: null,
     vimeoId: '1190698545',
-    thumbnail: null,
+    thumbnail: '/thumbnails/bright-cell-youth-to-the-people-thumb.jpg',
     stills: [
       '/stills/bright-cell-youth-to-the-people-1.jpg',
       '/stills/bright-cell-youth-to-the-people-2.jpg',
@@ -194,7 +194,7 @@ export const projects = [
     year: '2024',
     awards: null,
     vimeoId: '1190459418',
-    thumbnail: null,
+    thumbnail: '/thumbnails/shoot-thumb.jpg',
     stills: [
       '/stills/shoot-1.jpg',
       '/stills/shoot-2.jpg',
@@ -212,7 +212,7 @@ export const projects = [
     year: '2024',
     awards: null,
     vimeoId: '1190459418',
-    thumbnail: null,
+    thumbnail: '/thumbnails/perto-jester-thumb.jpg',
     stills: [
       '/stills/perto-jester-1.jpg',
       '/stills/perto-jester-2.jpg',
@@ -230,7 +230,7 @@ export const projects = [
     year: '2024',
     awards: null,
     vimeoId: '1190460450',
-    thumbnail: null,
+    thumbnail: '/thumbnails/khamari-right-my-wrongs-thumb.jpg',
     stills: [
       '/stills/khamari-right-my-wrongs-1.png',
       '/stills/khamari-right-my-wrongs-2.jpg',
@@ -253,7 +253,7 @@ export const projects = [
       'Osaka Film Festival',
     ],
     vimeoId: '1190708767',
-    thumbnail: null,
+    thumbnail: '/thumbnails/1-girl-infinite-thumb.jpg',
     stills: [
       '/stills/1-girl-infinite-1.jpg',
       '/stills/1-girl-infinite-2.jpg',
@@ -271,7 +271,7 @@ export const projects = [
     year: '2024',
     awards: null,
     vimeoId: '1190454589',
-    thumbnail: null,
+    thumbnail: '/thumbnails/noon-goons-fw24-thumb.jpg',
     stills: [
       '/stills/noon-goons-fw24-1.jpg',
       '/stills/noon-goons-fw24-2.jpg',

@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import styles from './ProjectTile.module.css';
 
+
 export default function ProjectTile({ project, index }) {
   return (
     <div
@@ -19,7 +20,6 @@ export default function ProjectTile({ project, index }) {
         ) : (
           <div className={styles.placeholder} />
         )}
-
         <div className={styles.overlay}>
           <div className={styles.info}>
             <span className={styles.category}>{project.category}</span>
