@@ -21,6 +21,7 @@ export default function ProjectPage({ params }) {
   const project = projects.find((p) => p.id === params.slug);
   if (!project) notFound();
 
+  const aspectRatio = project.aspectRatio || '1.778'; // default 16:9
   const vimeoSrc = `https://player.vimeo.com/video/${project.vimeoId}?color=0e0e0d&title=0&byline=0&portrait=0`;
 
   const currentIndex = projects.findIndex((p) => p.id === params.slug);
@@ -36,7 +37,7 @@ export default function ProjectPage({ params }) {
       {/* Centre — video */}
       <main className={styles.main}>
         <div className={styles.playerWrap}>
-          <div className={styles.player}>
+          <div className={styles.player} style={{ aspectRatio: aspectRatio }}>
             <iframe
               src={vimeoSrc}
               allow="autoplay; fullscreen; picture-in-picture"

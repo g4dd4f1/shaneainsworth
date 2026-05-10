@@ -14,6 +14,7 @@ export const projects = [
     year: '2024',
     awards: null,
     vimeoId: '1190546210',
+    aspectRatio: '1.66',
     thumbnail: '/thumbnails/lykke-li-carousel-thumb.jpg',
     stills: [
       '/stills/lykke-li-carousel-1.jpg',
@@ -32,6 +33,7 @@ export const projects = [
     year: '2024',
     awards: null,
     vimeoId: '1190691403',
+    aspectRatio: '1.66',
     thumbnail: '/thumbnails/lykke-li-happy-hurts-thumb.jpg',
     stills: [
       '/stills/lykke-li-happy-hurts-1.jpg',
@@ -50,6 +52,7 @@ export const projects = [
     year: '2024',
     awards: ['Official Selection — EnergaCAMERIMAGE'],
     vimeoId: '1190609707',
+    aspectRatio: '1.66',
     thumbnail: '/thumbnails/lykke-li-5d-thumb.jpg',
     stills: [
       '/stills/lykke-li-5d-1.jpg',
@@ -68,6 +71,7 @@ export const projects = [
     year: '2024',
     awards: null,
     vimeoId: '1190707960',
+    aspectRatio: '1.66',
     thumbnail: '/thumbnails/lykke-li-eyeye-teaser-thumb.jpg',
     stills: [
       '/stills/lykke-li-eyeye-teaser-1.jpg',
@@ -122,6 +126,7 @@ export const projects = [
     year: '2024',
     awards: null,
     vimeoId: '1190459768',
+    aspectRatio: '1.32',
     thumbnail: '/thumbnails/bose-niki-thumb.jpg',
     stills: [
       '/stills/bose-niki-1.png',
@@ -140,6 +145,7 @@ export const projects = [
     year: '2024',
     awards: null,
     vimeoId: '1190697589',
+    aspectRatio: '1.333',
     thumbnail: '/thumbnails/mike-will-high3r-thumb.jpg',
     stills: [
       '/stills/mike-will-high3r-1.jpg',
@@ -158,6 +164,7 @@ export const projects = [
     year: '2024',
     awards: null,
     vimeoId: '1190699050',
+    aspectRatio: '1.57',
     thumbnail: '/thumbnails/noah-cyrus-avellano-thumb.jpg',
     stills: [
       '/stills/noah-cyrus-avellano-1.jpg',
@@ -194,6 +201,7 @@ export const projects = [
     year: '2024',
     awards: null,
     vimeoId: '1190459418',
+    aspectRatio: '1.66',
     thumbnail: '/thumbnails/shoot-thumb.jpg',
     stills: [
       '/stills/shoot-1.jpg',
@@ -211,7 +219,8 @@ export const projects = [
     productionCo: 'Screens',
     year: '2024',
     awards: null,
-    vimeoId: '1190459418',
+    vimeoId: '1190463902',
+    aspectRatio: '1.66',
     thumbnail: '/thumbnails/perto-jester-thumb.jpg',
     stills: [
       '/stills/perto-jester-1.jpg',
@@ -230,6 +239,7 @@ export const projects = [
     year: '2024',
     awards: null,
     vimeoId: '1190460450',
+    aspectRatio: '1.5',
     thumbnail: '/thumbnails/khamari-right-my-wrongs-thumb.jpg',
     stills: [
       '/stills/khamari-right-my-wrongs-1.png',
@@ -271,6 +281,7 @@ export const projects = [
     year: '2024',
     awards: null,
     vimeoId: '1190454589',
+    aspectRatio: '1.57',
     thumbnail: '/thumbnails/noon-goons-fw24-thumb.jpg',
     stills: [
       '/stills/noon-goons-fw24-1.jpg',
