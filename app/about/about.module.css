@@ -21,14 +21,13 @@
   gap: 28px;
 }
 
-/* ── Portrait — ~1/3 width, centered ── */
+/* ── Portrait — matches width of text columns ── */
 .portrait {
   position: relative;
-  width: 33%;
+  width: 100%;
   aspect-ratio: 656 / 368;
   overflow: hidden;
   background: #e0ddd6;
-  margin: 0 auto;
 }
 
 .portraitImg {
