@@ -116,6 +116,12 @@ export default function ProjectPage({ params }) {
                 <span key={name} className={styles.creditValue}>{name}</span>
               ))}
             </div>
+            {project.format && (
+              <div className={styles.credit}>
+                <span className={styles.creditLabel}>Format</span>
+                <span className={styles.creditValue}>{project.format}</span>
+              </div>
+            )}
           </div>
 
           {project.awards && project.awards.length > 0 && (
