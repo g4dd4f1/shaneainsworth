@@ -22,7 +22,7 @@ export default function Sidebar() {
             Work
           </Link>
           <Link href="/about" className={path === '/about' ? styles.active : styles.link}>
-            Bio
+            About
           </Link>
           <a href="mailto:shane@shaneainsworth.com" className={styles.link}>
             Contact
