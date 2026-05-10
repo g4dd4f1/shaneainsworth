@@ -1,8 +1,10 @@
 .grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: var(--grid-gap);
+  column-gap: clamp(16px, 2.5vw, 32px);
+  row-gap: var(--grid-gap);
   padding: var(--grid-gap);
+  padding-right: clamp(24px, 4vw, 60px);
 }
 
 .link {
@@ -14,5 +16,7 @@
 @media (max-width: 560px) {
   .grid {
     grid-template-columns: 1fr;
+    column-gap: 0;
+    padding-right: var(--grid-gap);
   }
 }
