@@ -40,6 +40,13 @@
 
 .info {
   opacity: 0;
+  transform: translateY(6px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.tile:hover .info {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .category {
