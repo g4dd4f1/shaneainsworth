@@ -184,6 +184,7 @@
 .creditValue {
   font-size: clamp(0.82rem, 1vw, 0.95rem);
   color: var(--black);
+  display: block;
 }
 
 /* ── Awards ── */

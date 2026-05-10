@@ -110,12 +110,11 @@ export default function ProjectPage({ params }) {
               </div>
             )}
             <div className={styles.credit}>
-              <span className={styles.creditLabel}>Cinematographer</span>
+              <span className={styles.creditLabel}>{project.cinematographerLabel || 'Cinematographer'}</span>
               <span className={styles.creditValue}>Shane Ainsworth</span>
-            </div>
-            <div className={styles.credit}>
-              <span className={styles.creditLabel}>Year</span>
-              <span className={styles.creditValue}>{project.year}</span>
+              {project.additionalCinematographers && project.additionalCinematographers.map((name) => (
+                <span key={name} className={styles.creditValue}>{name}</span>
+              ))}
             </div>
           </div>
 
