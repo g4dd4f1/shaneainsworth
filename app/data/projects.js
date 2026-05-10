@@ -108,6 +108,7 @@ export const projects = [
     year: '2024',
     awards: null,
     vimeoId: '1190464516',
+    aspectRatio: '2.03',
     thumbnail: '/thumbnails/andre-3000-citizen-mag-thumb.jpg',
     stills: [
       '/stills/andre-3000-citizen-mag-1.jpg',
