@@ -34,22 +34,19 @@
   object-fit: cover;
 }
 
-/* ── Bio — two columns side by side ── */
+/* ── Bio — single column, stacked paragraphs ── */
 .bio {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: clamp(20px, 3vw, 40px);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
   font-size: clamp(0.68rem, 0.82vw, 0.78rem);
   line-height: 1.8;
   color: var(--black);
+  text-align: justify;
 }
 
 .bio p {
   margin: 0;
-}
-
-.bio p:last-child {
-  grid-column: 1 / -1;
 }
 
 .bio em {
