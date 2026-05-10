@@ -4,7 +4,7 @@
   column-gap: clamp(16px, 2.5vw, 32px);
   row-gap: var(--grid-gap);
   padding: var(--grid-gap);
-  padding-right: clamp(24px, 4vw, 60px);
+  padding-right: clamp(16px, 2.5vw, 32px);
 }
 
 .link {
