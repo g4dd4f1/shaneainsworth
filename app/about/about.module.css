@@ -9,23 +9,26 @@
   min-height: 100vh;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .inner {
   width: 100%;
-  padding: 60px clamp(24px, 4vw, 64px);
+  max-width: 680px;
+  padding: 40px clamp(24px, 4vw, 64px);
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 28px;
 }
 
-/* ── Portrait — full width, landscape ── */
+/* ── Portrait — ~1/3 width, centered ── */
 .portrait {
   position: relative;
-  width: 100%;
+  width: 33%;
   aspect-ratio: 656 / 368;
   overflow: hidden;
   background: #e0ddd6;
+  margin: 0 auto;
 }
 
 .portraitImg {
@@ -36,8 +39,8 @@
 .bio {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: clamp(24px, 4vw, 56px);
-  font-size: clamp(0.72rem, 0.9vw, 0.82rem);
+  gap: clamp(20px, 3vw, 40px);
+  font-size: clamp(0.68rem, 0.82vw, 0.78rem);
   line-height: 1.8;
   color: var(--black);
 }
@@ -56,11 +59,11 @@
   gap: 32px;
   align-items: baseline;
   border-top: 1px solid var(--rule);
-  padding-top: 20px;
+  padding-top: 16px;
 }
 
 .emailLink {
-  font-size: clamp(0.7rem, 0.85vw, 0.8rem);
+  font-size: clamp(0.65rem, 0.8vw, 0.75rem);
   letter-spacing: 0.04em;
   border-bottom: 1px solid var(--black);
   padding-bottom: 1px;
@@ -72,7 +75,7 @@
 }
 
 .instagramLink {
-  font-size: clamp(0.65rem, 0.78vw, 0.72rem);
+  font-size: clamp(0.62rem, 0.75vw, 0.7rem);
   letter-spacing: 0.1em;
   color: var(--mid);
   transition: color 0.2s;
@@ -87,6 +90,11 @@
     margin-left: 0;
     width: 100%;
     padding-top: 72px;
+    align-items: flex-start;
+  }
+
+  .portrait {
+    width: 50%;
   }
 
   .bio {
